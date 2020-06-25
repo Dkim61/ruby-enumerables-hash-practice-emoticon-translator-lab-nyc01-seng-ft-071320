@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, emoticon)
   emotocons = YAML.load_file(file_path)
   translation = ""
   emotocons.each do |key, value|
-    
+    if value == 
 end
 
 
