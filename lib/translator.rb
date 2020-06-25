@@ -25,7 +25,7 @@ def get_japanese_emoticon(file_path, emoticon)
     if value[0] == emoticon
       translation += value[1]
     else
-      puts "Sorry, that emoticon was not found"
+      return "Sorry, that emoticon was not found"
     end
   end
   translation
@@ -40,7 +40,7 @@ def get_english_meaning(file_path, emoticon)
       if value.include?(emoticon)
         meaning += key
       else
-        puts "Sorry, that meaning was not found"
+        return "Sorry, that meaning was not found"
       end
     end
   meaning
