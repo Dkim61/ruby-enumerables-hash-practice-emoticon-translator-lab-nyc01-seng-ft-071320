@@ -19,7 +19,7 @@ end
 
 
 def get_japanese_emoticon(file_path, emoticon)
-  emotocons = YAML.load_file(file_path)
+  emotocons = load_library(file_path)
   emotocons.each do |key, value|
     if value[0] == emoticon
       return value[1]
