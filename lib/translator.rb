@@ -29,9 +29,9 @@ def get_english_meaning(file_path, emoticon)
     emotocons.each do |key, value|
       if value.include?(emoticon)
         meaning += key
-        meaning
       else
-        puts "Sorry, that meaning was not found"
+        return "Sorry, that meaning was not found"
       end
     end
+  meaning
 end
