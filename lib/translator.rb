@@ -19,12 +19,6 @@ end
 
 
 def get_japanese_emoticon(file_path, emoticon)
-  emoticons = load_library(file_path)
-  emoticons.each do
-    if emotocons[0] == emoticon
-      emotocons[1]
-    end
-  end
 end
 
 
