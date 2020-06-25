@@ -23,8 +23,10 @@ end
 
 
 
-def get_english_meaning
+def get_english_meaning(file_path, emoticon)
   emotocons = YAML.load_file(file_path)
   meaning = ""
-    
+    emotocons.each do |key, value|
+      if value
+    end
 end
