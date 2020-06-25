@@ -37,9 +37,6 @@ def get_english_meaning(file_path, emoticon)
   emotocons = load_library(file_path)
   meaning = ""
     emotocons.each do |key, value|
-      if value.include?(emoticon)
-        meaning += key
-      end
+      
     end
-  meaning
 end
