@@ -15,9 +15,6 @@ def load_library(file_path)
   new_emotocons
 end
 
-# Write a method, `get_japanese_emoticon`, that will take a traditional Western
-   emoticon (i.g. `:)`) and translate it to its Japanese version (`(＾ｖ＾)`). It will also rely
-   `load_library` to first load the YAML file.
 
 
 def get_japanese_emoticon(file_path, emoticon)
