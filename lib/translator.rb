@@ -20,15 +20,17 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emotocons = YAML.load_file(file_path)
-  translation = ""
+  tra
   emotocons.each do |key, value|
     if value[0] == emoticon
       translation += value[1]
-    else
-      return "Sorry, that emoticon was not found"
     end
   end
-  translation
+  if 
+    return "Sorry, that emoticon was not found"
+  else
+    translation
+  end
 end
 
 
